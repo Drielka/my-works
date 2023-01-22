@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Damion&family=Titillium+Web&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="main.css">
+		<title>lpage</title>
+	</head>
+	<body>
+		<!--sprite-->
+		<svg style="display: none">
+			<symbol id="facebook" viewBox="0 0 96.124 96.123">
+			<g>
+				<path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+					c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+					c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+					c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" />
+				</g>
+				</symbol>
+				<symbol id="twitter" viewBox="0 0 512 512">
+				<g>
+					<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+						c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+						c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+						c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+						c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+						c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+						C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+						C480.224,136.96,497.728,118.496,512,97.248z" />
+					</g>
+					</symbol>
+					<symbol id="linkedin" viewBox="0 0 310 310">
+					<g>
+						<path d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
+							C77.16,101.969,74.922,99.73,72.16,99.73z" />
+						<path d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4
+								c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z" />
+						<path d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599
+									c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319
+									c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995
+									C310,145.43,300.549,94.761,230.454,94.761z" />
+								</g>
+								</symbol>
+								<symbol id="letter" viewBox="0 -89 512 511">
+								<path d="m256 235.078125-256-200.761719v298.679688h512v-298.679688zm0 0"/>
+								<path d="m506.503906.5h-501.007812l250.503906 196.453125zm0 0"/>
+								</symbol>
+							</svg>
+							<!--header-->
+							<header class="header">
+								<section class="container">
+									
+									<h1 class="header__title">
+									Cuda
+									</h1>
+									<!--nav-->
+									<nav class="nav">
+										<a class="nav__link" href="#">home</a>
+										<a class="nav__link" href="#about">about</a>
+										<a class="nav__link" href="#work">work</a>
+										<a class="nav__link" href="#blog">blog</a>
+										<a class="nav__link" href="#contact">contact</a>
+									</nav>
+									<!--/nav-->
+									<!-- adaptiv menu -->
+									<div class="menu__adapt">
+										<input type="checkbox" id="mobile__menu" class="switch">
+										<label for="mobile__menu" class="switch">menu</label>
+										<ul class="drop__menu">
+											
+											<li class="menu__link">
+												<a href="#" class="menu__a">home</a>
+											</li>
+											<li class="menu__link">
+												<a href="#about" class="menu__a">about</a>
+											</li>
+											<li class="menu__link">
+												<a href="#work" class="menu__a">work</a>
+											</li>
+											<li class="menu__link">
+												<a href="#blog" class="menu__a">blog</a>
+											</li>
+											<li class="menu__link">
+												<a href="#contact" class="menu__a">contact</a>
+											</li>
+										</ul>
+									</div>
+									<!-- /adaptiv menu -->
+								</section>
+							</header>
+							<!--/header-->
+							<!--intro-->
+							<div class="intro">
+								<section class="container">
+									<h4 class="intro__text">
+									Hi there! We are the new kids on the block <br>
+									and we build awesome websites and mobile apps.
+									</h4>
+									<button class="btn__intro"> <span>work with us!</span>
+									
+									</button>
+								</section>
+							</div>
+							<!--/intro-->
+							<!--services-->
+							<div class="services" id="about">
+								<section class="container">
+									<h2 class="services__title">
+									services we provide
+									</h2>
+									<p class="title__text">
+										We are working with both individuals and businesses from all over the globe <br>
+										to create awesome websites and applications.
+									</p>
+									<div class="services__blocks">
+										<div class="block">
+											<img class="block__img" src="./img/services/1.png" alt="picture">
+											<p class="block__title">
+												branding
+											</p>
+											<p class="block__text">
+												Lorem ipsum dolor sit amet,
+												consectetuer adipiscing elit, sed diam nonummy nibh.
+											</p>
+										</div>
+										
+										<div class="block">
+											<img class="block__img" src="./img/services/2.png" alt="picture">
+											<p class="block__title">
+												design
+											</p>
+											<p class="block__text">
+												Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+											</p>
+										</div>
+										
+										<div class="block">
+											<img class="block__img" src="./img/services/3.png" alt="picture">
+											<p class="block__title">
+												development
+											</p>
+											<p class="block__text">
+												At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.
+											</p>
+										</div>
+										<div class="block">
+											<img class="block__img" src="./img/services/4.png" alt="picture">
+											<p class="block__title">
+												ROCKET SCIENCE
+											</p>
+											<p class="block__text">
+												Et harum quidem rerum est et expedita distinctio. Nam libero tempore.
+											</p>
+										</div>
+									</div>
+								</section>
+							</div>
+							<!--/services-->
+							
+							<!-- meet -->
+							<div class="meet">
+								<section class="container">
+									
+									<h2 class="meet__title">
+									MEET OUR BEAUTIFUL TEAM
+									</h2>
+									<p class="meet__text">
+										We are a small team of designers and developers, who help brands with big ideas.
+									</p>
+									<div class="meet__content">
+										
+										<div class="content__block">
+											
+											<img class="circle" src="./img/camera.jpg" alt="circle">
+											<p class="content__title">ANNE HATHAWAY</p>
+											<a class="content__link" href="#">CEO / Marketing Guru</a>
+											<p class="content__text">
+												Lorem ipsum dolor sit amet,
+												consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+											</p>
+											<div class="content__svg">
+												<a class="svg" href="https://www.facebook.com/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#facebook">
+														</use>
+													</svg>
+												</a>
+												<a class="svg" href="https://twitter.com/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#twitter">
+														</use>
+													</svg>
+												</a>
+												<a class="svg" href="https://www.linkedin.com/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#linkedin">
+														</use>
+													</svg>
+												</a>
+												<a class="svg" href="https://www.google.com/intl/ru/gmail/about/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#letter">
+														</use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="content__block">
+											
+											<img class="circle" src="./img/camera.jpg"  alt="circle">
+											<p class="content__title">Kate Upton</p>
+											<a class="content__link" href="#">Creative Director</a>
+											<p class="content__text">
+												Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.
+											</p>
+											<div class="content__svg">
+												<a class="svg" href="https://twitter.com/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#twitter">
+														</use>
+													</svg>
+												</a>
+												<a class="svg" href="https://www.linkedin.com/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#linkedin">
+														</use>
+													</svg>
+												</a>
+												<a class="svg" href="https://www.google.com/intl/ru/gmail/about/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#letter">
+														</use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="content__block">
+											
+											<img class="circle" src="./img/camera.jpg"  alt="circle">
+											<p class="content__title">Olivia Wilde</p>
+											<a class="content__link" href="#">Lead Designer</a>
+											<p class="content__text">
+												Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem .
+											</p>
+											<div class="content__svg">
+												<a class="svg" href="https://www.facebook.com/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#facebook">
+														</use>
+													</svg>
+												</a>
+												<a class="svg" href="https://twitter.com/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#twitter">
+														</use>
+													</svg>
+												</a>
+												<a class="svg" href="https://www.linkedin.com/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#linkedin">
+														</use>
+													</svg>
+												</a>
+												<a class="svg" href="https://www.google.com/intl/ru/gmail/about/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#letter">
+														</use>
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="content__block">
+											
+											<img class="circle" src="./img/camera.jpg" alt="circle">
+											<p class="content__title">Ashley Greene</p>
+											<a class="content__link" href="#">SEO / Developer</a>
+											<p class="content__text">
+												Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+											</p>
+											<div class="content__svg">
+												<a class="svg" href="https://www.facebook.com/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#facebook">
+														</use>
+													</svg>
+												</a>
+												<a class="svg" href="https://www.linkedin.com/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#linkedin">
+														</use>
+													</svg>
+												</a>
+												<a class="svg" href="https://www.google.com/intl/ru/gmail/about/" target="_blank">
+													<svg class="social">
+														<use xlink:href="#letter">
+														</use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+							<!-- /meet -->
+							<!-- skills -->
+							<div class="skills">
+								<section class="container">
+									<h2 class="skills__title">
+									WE GOT SKILLS!
+									</h2>
+									<p class="skills__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</p>
+									
+									<div class="skill__blocks">
+										<div class="block__content">
+											
+											<img class="content__img" src="./img/skills/1.png" alt="progress">
+											<h4 class="content__title">Web Design</h4>
+										</div>
+										<div class="block__content">
+											
+											<img class="content__img" src="./img/skills/2.png" alt="progress">
+											<h4 class="content__title">html/css</h4>
+										</div>
+										<div class="block__content">
+											
+											<img class="content__img" src="./img/skills/3.png" alt="progress">
+											<h4 class="content__title">GRAPHIC DESIG</h4>
+										</div>
+										<div class="block__content">
+											
+											<img class="content__img" src="./img/skills/4.png" alt="progress">
+											<h4 class="content__title">UI / UX</h4>
+										</div>
+									</div>
+								</section>
+							</div>
+							<!-- /skills -->
+							<!-- portfolio -->
+							<div class="portfolio" id="work">
+								<section class="container">
+									<h2 class="portfolio__title">
+									OUR PORTFOLIO
+									</h2>
+									<p class="portfolio__text">
+										Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+										consectetur, adipisci velit, sed quia non numquam
+									</p>
+									<div class="portfolio__btns">
+										
+										<button class="up__btns">all</button>
+										<button class="up__btns">web</button>
+										<button class="up__btns">apps</button>
+										<button class="up__btns">icons</button>
+									</div>
+									<div class="portfolio__blocks">
+										<div class="content__info">
+											<img class="info__img" src="./img/portfolio/1.png" alt="comp">
+											<h4 class="info__title">Isometric Perspective Mock-Up</h4>
+										</div>
+										<div class="content__info">
+											<img class="info__img" src="./img/portfolio/2.png" alt="comp">
+											<h4 class="info__title">Isometric Perspective Mock-Up</h4>
+										</div>
+										<div class="content__info">
+											<img class="info__img" src="./img/portfolio/3.png" alt="comp">
+											<h4 class="info__title">Isometric Perspective Mock-Up</h4>
+										</div>
+										<div class="content__info">
+											<img class="info__img" src="./img/portfolio/4.png" alt="comp">
+											<h4 class="info__title">Isometric Perspective Mock-Up</h4>
+										</div>
+										<button class="btn__portfolio"> <span>LOAD MORE PROJECTS</span>
+										
+										</button>
+									</div>
+								</section>
+							</div>
+							<!-- /portfolio -->
+							<!-- reviews -->
+							<div class="reviews" id="blog">
+								<section class="container">
+									
+									<h2 class="reviews__title">
+									WHAT POEPLE SAY ABOUT US
+									</h2>
+									<p class="reviews__text">
+										Our clients love us!
+									</p>
+									<div class="reviews__content">
+										
+										<div class="reviews__info">
+											<img class="reviews__img" src="./img/camera.jpg" alt="face">
+											<div class="info__text">
+												<p class="text__cursive">“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+												<h4 class="text__name">Chanel Iman</h4>
+												<a class="text__link" href="#">CEO of Pinterest</a>
+											</div>
+										</div>
+										<div class="reviews__info">
+											<img class="reviews__img" src="./img/camera.jpg" alt="face">
+											<div class="info__text">
+												<p class="text__cursive">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+												<h4 class="text__name">ADRIANA LIMA</h4>
+												<a class="text__link" href="#">Founder of Instagram</a>
+											</div>
+										</div>
+										<div class="reviews__info">
+											<img class="reviews__img" src="./img/camera.jpg" alt="face">
+											<div class="info__text">
+												<p class="text__cursive">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+												<h4 class="text__name">ANNE HATHAWAY</h4>
+												<a class="text__link" href="#">Lead Designer at Behance</a>
+											</div>
+										</div>
+										<div class="reviews__info">
+											<img class="reviews__img" src="./img/camera.jpg" alt="face">
+											<div class="info__text">
+												<p class="text__cursive">“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
+												<h4 class="text__name">EMMA STONE</h4>
+												<a class="text__link" href="#">Co-Founder of Shazam</a>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+							<!-- /reviews -->
+							<!-- get -->
+							<div class="get" id="contact">
+								<section class="container">
+									
+									<h2 class="get__title">
+									get in touch
+									</h2>
+									<p class="get__text">
+										1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
+									</p>
+									<form class="get__form" action="#" method="post">
+										
+										<input class="get__input" type="text" placeholder="Your Name *" required>
+										<input class="get__input" type="email" placeholder="Your Email *"  required>
+										<textarea class="get__area" name="message" placeholder="Your Message *"></textarea>
+										<button class="btn__get">
+										send message
+										</button>
+									</form>
+								</section>
+							</div>
+							<!-- /get -->
+							<!-- footer -->
+							<footer class="footer">
+								
+								<div class="links">
+									<a class="footer__link" href="https://www.facebook.com/" target="_blank">Facebook</a>
+									<a class="footer__link" href="https://twitter.com/" target="_blank">Twitter</a>
+									<a class="footer__link" href="https://google.com/" target="_blank">Google+</a>
+									<a class="footer__link" href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+									<a class="footer__link" href="https://www.behance.net/" target="_blank">Behance</a>
+									<a class="footer__link" href="https://dribbble.com/" target="_blank">Dribbble</a>
+									<a class="footer__link" href="https://github.com/" target="_blank">GitHub</a>
+								</div>
+							</footer>
+							<!-- /footer -->
+						</body>
+					</html>

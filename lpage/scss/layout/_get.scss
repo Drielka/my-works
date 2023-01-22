@@ -1,0 +1,82 @@
+.get{
+	 @include text;
+	 background-color: #3c5499;
+	 color: #fff;
+}
+.get__title{
+	@include title;
+}
+.get__title::after{
+	@include after;
+	background-color: #273a71;
+}
+.get__text{
+	@include paragraph;
+}
+.get__form{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 70px 0 50px 0;
+font-size: 18px;
+}
+.get__input{
+width: 40%;
+height: 50px;
+border-radius: 4px;
+color:#fff;
+background-color: #273a71;
+margin-bottom: 20px;
+border: none;
+font-size: 16px;
+padding-left: 20px;
+}
+
+.get__area{
+width: 90%;
+border-radius: 4px;
+color:#fff;
+background-color: #273a71;
+height: 150px;
+border: none;
+font-size: 16px;
+padding: 20px 0 0 20px;
+margin-bottom: 50px;
+}
+
+
+
+
+
+// adaptive
+ @media(max-width: 1000px) {
+.get__title{
+ margin: 70px 0 25px 0;
+ }
+.get__form{
+ 	margin: 50px 0 30px 0;
+ }
+
+
+ }
+
+ @media(max-width: 650px){
+
+.reviews__info{
+ 	width: 100%;
+	
+ }
+ .get__title::after{
+ 	left :38vw;
+ }
+  .get__input{
+ 	width: 100%;
+ }
+ }
+
+ @media(max-width: 400px){
+.get__title::after{
+ 	left :36vw;
+ }
+
+ }

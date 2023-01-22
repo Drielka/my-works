@@ -1,0 +1,35 @@
+@mixin title{
+	margin: 120px 0 25px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:30px;
+	width: 100%;
+	position: relative;
+}
+@mixin after{
+content: "";
+position: absolute;
+width: 90px;
+height: 3px;
+display: block;
+left :43vw;
+}
+@mixin text{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+@mixin paragraph{
+	font-size: 18px;
+	text-align: center;
+}
+@mixin display{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+@mixin blocks{
+	width: 25%;
+	padding: 0 20px;
+	margin-bottom: 25px;
+}
