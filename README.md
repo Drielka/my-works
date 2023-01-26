@@ -3,6 +3,8 @@
 [start](https://github.com/Drielka/my-works/tree/main/start/css/style.css)    
 
 [mogo](https://github.com/Drielka/my-works/tree/main/mogo/mogo.html)  
+[mogo](https://github.com/Drielka/my-works/tree/main/mogo/css/mogo.css)  
+ 
 
 [lpage](https://github.com/Drielka/my-works/tree/main/lpage/index.html)  
 
